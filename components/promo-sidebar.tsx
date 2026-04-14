@@ -60,7 +60,7 @@ export function PromoSidebar() {
       </Card>
 
       {/* Courses Banner */}
-      <Card className="border-none bg-white dark:bg-zinc-900 shadow-lg shadow-black/[0.03]">
+      <Card className="border-none bg-card shadow-lg shadow-black/[0.03]">
         <CardHeader className="pb-4">
           <div className="flex items-center gap-2">
             <div className="p-1.5 bg-primary/5 rounded-md">

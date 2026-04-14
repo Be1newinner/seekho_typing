@@ -78,7 +78,7 @@ export function ExamTestsSection() {
           <CardContent className="p-8 pt-4 space-y-8">
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="flex items-center gap-4 p-5 bg-surface-low rounded-2xl border border-border/10">
-                <div className="p-3 bg-white shadow-sm rounded-xl">
+                <div className="p-3 bg-surface-lowest shadow-sm rounded-xl">
                   <Clock className="h-6 w-6 text-primary" />
                 </div>
                 <div>
@@ -88,7 +88,7 @@ export function ExamTestsSection() {
               </div>
               
               <div className="flex items-center gap-4 p-5 bg-surface-low rounded-2xl border border-border/10">
-                <div className="p-3 bg-white shadow-sm rounded-xl">
+                <div className="p-3 bg-surface-lowest shadow-sm rounded-xl">
                   <FileText className="h-6 w-6 text-primary" />
                 </div>
                 <div>
@@ -117,7 +117,7 @@ export function ExamTestsSection() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between p-6 bg-white dark:bg-black/20 rounded-2xl border border-border/10 shadow-sm">
+            <div className="flex items-center justify-between p-6 bg-surface-low rounded-2xl border border-border/10 shadow-sm">
               <div className="space-y-1">
                 <Label htmlFor="exam-no-backspace" className="text-sm font-black tracking-tight">
                   Stricter Correction
@@ -190,7 +190,7 @@ export function ExamTestsSection() {
             onClick={() => setCategoryFilter("ALL")}
             className={cn(
               "px-5 py-2 text-xs font-bold uppercase tracking-widest rounded-xl transition-all",
-              categoryFilter === "ALL" ? "bg-white text-primary shadow-lg shadow-black/5" : "text-muted-foreground hover:text-foreground"
+              categoryFilter === "ALL" ? "bg-surface-lowest text-primary shadow-lg shadow-black/5" : "text-muted-foreground hover:text-foreground"
             )}
           >
             All <span className="ml-1 opacity-50 font-normal">{examTests.length}</span>
@@ -199,7 +199,7 @@ export function ExamTestsSection() {
             onClick={() => setCategoryFilter("GOVT")}
             className={cn(
               "px-5 py-2 text-xs font-bold uppercase tracking-widest rounded-xl transition-all",
-              categoryFilter === "GOVT" ? "bg-white text-emerald-600 shadow-lg shadow-black/5" : "text-muted-foreground hover:text-foreground"
+              categoryFilter === "GOVT" ? "bg-surface-lowest text-emerald-600 shadow-lg shadow-black/5" : "text-muted-foreground hover:text-foreground"
             )}
           >
             GOVT <span className="ml-1 opacity-50 font-normal">{govtExamsCount}</span>
@@ -208,7 +208,7 @@ export function ExamTestsSection() {
             onClick={() => setCategoryFilter("OTHER")}
             className={cn(
               "px-5 py-2 text-xs font-bold uppercase tracking-widest rounded-xl transition-all",
-              categoryFilter === "OTHER" ? "bg-white text-blue-600 shadow-lg shadow-black/5" : "text-muted-foreground hover:text-foreground"
+              categoryFilter === "OTHER" ? "bg-surface-lowest text-blue-600 shadow-lg shadow-black/5" : "text-muted-foreground hover:text-foreground"
             )}
           >
             Other <span className="ml-1 opacity-50 font-normal">{otherExamsCount}</span>

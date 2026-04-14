@@ -14,7 +14,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/70 dark:bg-black/70 backdrop-blur-xl border-b border-border/40">
+    <header className="sticky top-0 z-50 w-full bg-glass backdrop-blur-xl border-b border-border/40">
       <div className="container mx-auto flex h-16 items-center justify-between px-6">
         <a
           href="/"

@@ -28,8 +28,8 @@ export function Navigation({ activeSection, onSectionChange }: NavigationProps) 
           className={cn(
             "relative px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-300 outline-none",
             activeSection === section.id 
-              ? "text-primary bg-white shadow-md shadow-primary/5 translate-y-[-1px]" 
-              : "text-muted-foreground hover:text-foreground hover:bg-white/50"
+              ? "text-primary bg-surface-lowest shadow-md shadow-primary/5 translate-y-[-1px]" 
+              : "text-muted-foreground hover:text-foreground hover:bg-surface-lowest/50"
           )}
         >
           {section.label}

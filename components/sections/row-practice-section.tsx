@@ -98,7 +98,7 @@ export function RowPracticeSection() {
                 {row.description}
               </CardDescription>
               
-              <div className="relative py-6 px-4 bg-surface-low rounded-xl border border-border/10 group-hover:bg-white group-hover:border-primary/20 transition-all text-center">
+              <div className="relative py-6 px-4 bg-surface-low rounded-xl border border-border/10 group-hover:bg-surface-lowest group-hover:border-primary/20 transition-all text-center">
                 <p className="font-mono text-2xl font-black tracking-[0.3em] text-primary/80 group-hover:text-primary">
                   {row.keys}
                 </p>

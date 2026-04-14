@@ -37,26 +37,34 @@
 }
 
 .dark {
-  --background: #111318;
+  --background: #0a0b10;
   --foreground: #e2e2e6;
-  --card: #1a1c1e;
+  --card: #161821;
   --card-foreground: #e2e2e6;
-  --popover: #1a1c1e;
+  --popover: #161821;
   --popover-foreground: #e2e2e6;
   --primary: #c0c1ff;
   --primary-foreground: #04006d;
   --primary-container: #373a9b;
   --secondary: #3a485b;
   --secondary-foreground: #d5e3fc;
-  --muted: #1a1c1e;
+  --muted: #161821;
   --muted-foreground: #c7c5d4;
-  --accent: #1a1c1e;
+  --accent: #161821;
   --accent-foreground: #c0c1ff;
   --destructive: #ffdad6;
   --destructive-foreground: #93000a;
-  --border: #464652;
-  --input: #2d3133;
+  --border: #2a2c3a;
+  --input: #1a1c26;
   --ring: #4f54b4;
+
+  /* Surface Tiers - Dark Mode */
+  --surface-low: #11131a;
+  --surface-lowest: #161821;
+  --surface-highest: #050508;
+  
+  /* Glassmorphism - Dark Mode */
+  --glass-bg: rgba(10, 11, 16, 0.7);
 }
 
 @theme inline {
@@ -86,6 +94,7 @@
   --color-surface-low: var(--surface-low);
   --color-surface-lowest: var(--surface-lowest);
   --color-surface-highest: var(--surface-highest);
+  --color-glass: var(--glass-bg);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -98,6 +107,15 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .scrollbar-none {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }

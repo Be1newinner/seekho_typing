@@ -61,7 +61,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="border-t border-border/10 py-12 bg-white dark:bg-black/20">
+      <footer className="border-t border-border/10 py-12 bg-surface-low/50">
         <div className="container mx-auto px-6 flex flex-col items-center gap-4">
           <div className="flex items-center gap-2 grayscale opacity-50">
             <div className="w-6 h-6 rounded-md bg-primary flex items-center justify-center text-white text-[10px] font-bold">S</div>
