@@ -19,8 +19,8 @@ export default function Home() {
     switch (activeSection) {
       case "lessons":
         return <LessonsSection />;
-      case "row-practice":
-        return <RowPracticeSection />;
+      // case "row-practice":
+      //   return <RowPracticeSection />;
       case "pangrams":
         return <PangramsSection />;
       case "exam-tests":

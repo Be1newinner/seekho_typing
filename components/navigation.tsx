@@ -12,7 +12,7 @@ interface NavigationProps {
 
 const sections: { id: Section; label: string }[] = [
   { id: "lessons", label: "Lessons" },
-  { id: "row-practice", label: "Row Practice" },
+  // { id: "row-practice", label: "Row Practice" },
   { id: "pangrams", label: "Pangrams" },
   { id: "exam-tests", label: "Exam Tests" },
   { id: "games", label: "Games" },
@@ -27,8 +27,8 @@ export function Navigation({ activeSection, onSectionChange }: NavigationProps) 
           onClick={() => onSectionChange(section.id)}
           className={cn(
             "relative px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-300 outline-none",
-            activeSection === section.id 
-              ? "text-primary bg-surface-lowest shadow-md shadow-primary/5 translate-y-[-1px]" 
+            activeSection === section.id
+              ? "text-primary bg-surface-lowest shadow-md shadow-primary/5 translate-y-[-1px]"
               : "text-muted-foreground hover:text-foreground hover:bg-surface-lowest/50"
           )}
         >

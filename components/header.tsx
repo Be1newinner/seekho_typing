@@ -36,7 +36,7 @@ export function Header() {
         <div className="flex items-center gap-4">
           <nav className="hidden md:flex items-center gap-6 mr-4">
             <a href="https://seekhocomputer.com" target="_blank" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Courses</a>
-            <a href="#" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">About</a>
+            {/* <a href="" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">About</a> */}
           </nav>
 
           {mounted && (

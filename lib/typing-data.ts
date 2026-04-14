@@ -11,7 +11,7 @@ export const lessons: Lesson[] = [
     id: 1,
     title: "Lesson 1: Home Row Basics",
     description: "Learn the home row keys - the foundation of touch typing",
-    text: "asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl;"
+    text: "asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj"
   },
   {
     id: 2,
@@ -144,7 +144,7 @@ export const rowPractices: RowPractice[] = [
     name: "Home Row",
     description: "Practice the home row keys - the foundation of touch typing",
     keys: "ASDFGHJKL;",
-    practiceText: "asdf jkl; asdf jkl; fjdk slfa fjdk slfa ghjk ghjk asdf jkl; fjdk slfa ghjk asdf jkl; fjdk slfa ghjk asdf jkl; asdf jkl; fjdk slfa ghjk asdf jkl; asdf ghjkl; asdf ghjkl; fghj dksl fghj dksl"
+    practiceText: "asdf ;lkj asdf ;lkj fjdk slfa fjdk slfa ghjk ghjk asdf ;lkj fjdk slfa ghjk asdf ;lkj fjdk slfa ghjk asdf ;lkj asdf ;lkj fjdk slfa ghjk asdf ;lkj asdf ghjkl; asdf ghjkl; fghj dksl fghj dksl"
   },
   {
     id: "top-row",
