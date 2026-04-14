@@ -19,17 +19,17 @@ export function LessonsSection() {
     const chars = Array.from(new Set(originalText.replace(/\s/g, "").split("")));
     let result = "";
     for (let i = 0; i < 20; i++) {
-        let word = "";
-        const wordLen = 3 + Math.floor(Math.random() * 4);
-        for (let j = 0; j < wordLen; j++) {
-            word += chars[Math.floor(Math.random() * chars.length)];
-        }
-        result += word + " ";
+      let word = "";
+      const wordLen = 3 + Math.floor(Math.random() * 4);
+      for (let j = 0; j < wordLen; j++) {
+        word += chars[Math.floor(Math.random() * chars.length)];
+      }
+      result += word + " ";
     }
     return result.trim();
   };
 
-  const lessonText = selectedLesson 
+  const lessonText = selectedLesson
     ? (randomMode ? generateRandomText(selectedLesson.text) : selectedLesson.text)
     : "";
 
@@ -66,7 +66,7 @@ export function LessonsSection() {
           <ArrowLeft className="h-4 w-4" />
           <span className="font-semibold text-xs uppercase tracking-widest">Back to Gallery</span>
         </Button>
-        
+
         <TypingScreen
           targetText={lessonText}
           title={selectedLesson.title + (randomMode ? " (Randomized)" : "")}
@@ -89,12 +89,12 @@ export function LessonsSection() {
             The foundation of mastery. Complete these <span className="text-primary font-bold">20 core lessons</span> to achieve 60+ WPM touch typing proficiency.
           </p>
         </div>
-        
+
         <div className="flex items-center gap-3 px-4 py-2 bg-surface-low rounded-2xl border border-border/10">
           <div className="flex items-center gap-2">
-            <Switch 
-              id="random-mode" 
-              checked={randomMode} 
+            <Switch
+              id="random-mode"
+              checked={randomMode}
               onCheckedChange={setRandomMode}
             />
             <Label htmlFor="random-mode" className="text-[10px] font-black uppercase tracking-widest text-muted-foreground cursor-pointer">
@@ -107,14 +107,14 @@ export function LessonsSection() {
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {lessons.map((lesson) => {
           const isCompleted = completedLessons.has(lesson.id);
-          
+
           return (
             <Card
               key={lesson.id}
               className={cn(
                 "group cursor-pointer border-none transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 hover:translate-y-[-4px]",
-                isCompleted 
-                  ? "bg-primary/5 shadow-inner" 
+                isCompleted
+                  ? "bg-primary/5 shadow-inner"
                   : "bg-surface-lowest shadow-lg shadow-black/[0.02]"
               )}
               onClick={() => setSelectedLesson(lesson)}
