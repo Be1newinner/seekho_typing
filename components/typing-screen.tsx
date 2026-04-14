@@ -238,7 +238,7 @@ export function TypingScreen({
           className="p-4 md:p-6 border-none bg-white dark:bg-white/5 shadow-2xl shadow-primary/5 min-h-[200px] max-h-[500px] flex items-center justify-start overflow-auto scrollbar-none transition-all"
         >
           <div className="w-full">
-            <p className="text-3xl md:text-5xl leading-none font-medium tracking-wider font-mono whitespace-nowrap relative z-10 py-40 px-[50%] transition-all">
+            <p className="text-3xl md:text-5xl leading-none font-medium tracking-wider font-mono whitespace-nowrap relative z-10 py-20 px-[50%] transition-all">
               {renderTargetText()}
             </p>
           </div>
