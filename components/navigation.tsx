@@ -20,20 +20,23 @@ const sections: { id: Section; label: string }[] = [
 
 export function Navigation({ activeSection, onSectionChange }: NavigationProps) {
   return (
-    <nav className="flex flex-wrap gap-2 p-2 bg-muted/50 rounded-lg">
+    <nav className="flex flex-wrap gap-1 p-1.5 bg-surface-low rounded-xl border border-border/20 shadow-sm">
       {sections.map((section) => (
-        <Button
+        <button
           key={section.id}
-          variant={activeSection === section.id ? "default" : "ghost"}
-          size="sm"
           onClick={() => onSectionChange(section.id)}
           className={cn(
-            "text-sm font-medium",
-            activeSection === section.id && "shadow-sm"
+            "relative px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-300 outline-none",
+            activeSection === section.id 
+              ? "text-primary bg-white shadow-md shadow-primary/5 translate-y-[-1px]" 
+              : "text-muted-foreground hover:text-foreground hover:bg-white/50"
           )}
         >
           {section.label}
-        </Button>
+          {activeSection === section.id && (
+            <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full" />
+          )}
+        </button>
       ))}
     </nav>
   );

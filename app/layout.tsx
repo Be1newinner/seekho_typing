@@ -1,15 +1,22 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Plus_Jakarta_Sans, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const plusJakartaSans = Plus_Jakarta_Sans({ 
+  subsets: ["latin"],
+  variable: '--font-plus-jakarta'
+});
+
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: '--font-inter'
+});
 
 export const metadata: Metadata = {
-  title: 'Seekho Computer Institute - Typing Practice',
-  description: 'Free typing practice by Seekho Computer Institute. Practice lessons, government exam tests (SSC, RRB, DSSSB, KVS, NVS, Delhi High Court), row exercises, pangrams, and fun typing games.',
+  title: 'Seekho Typing Elite - Premium Typing Mastery',
+  description: 'Master your typing skills with Seekho Typing Elite. Professional practice lessons, government exam simulations (SSC, RRB, DSSSB), and high-performance typing games in a luminous, focus-oriented environment.',
   icons: {
     icon: [
       {
@@ -45,7 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="font-sans antialiased">
+      <body className={`${plusJakartaSans.variable} ${inter.variable} font-sans antialiased text-foreground bg-background`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
